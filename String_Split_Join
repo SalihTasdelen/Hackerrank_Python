@@ -1,0 +1,28 @@
+def split_and_join(line):
+    # write your code here
+    #templist = list()
+    #ptr = 0
+    #for i in range(len(line)):
+    #    if line[i] == " ":
+    #        if i == ptr:
+    #            templist.append(line[i - ptr : i])
+    #        else:    
+    #            templist.append(line[i - ptr + 1 : i])
+    #        ptr = 0
+    #    elif i == len(line) - 1:
+    #        templist.append(line[i - ptr + 1: i + 1])
+    #    ptr+=1
+    #tempstring = ""
+    #for i in range(len(templist)):
+    #    if i == 0:
+    #        tempstring += templist[i]
+    #        continue    
+    #   tempstring += "-" + templist[i]
+    #return tempstring
+    a = "-".join(line.split())
+    return a
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
